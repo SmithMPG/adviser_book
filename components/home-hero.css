@@ -1,0 +1,51 @@
+.home-hero-wrapper {
+  padding: 20px 24px 0;
+}
+
+.home-hero {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  padding: 20px 0 40px;
+  flex-wrap: nowrap;
+}
+
+.hero-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  min-width: 220px;
+}
+/* Funnel and monthly stats share the same column width so the PCR
+   meter between them sits at the true visual center of the row. */
+.hero-col-funnel,
+.hero-col-monthly {
+  width: 440px;
+  flex: 0 0 auto;
+}
+.hero-col-funnel {
+  align-items: center;
+}
+
+.hero-center {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 28px 20px;
+  }
+  .hero-col-funnel {
+    width: auto;
+  }
+  .hero-col-monthly,
+  .hero-center {
+    width: auto;
+  }
+}

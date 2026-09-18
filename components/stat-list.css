@@ -1,0 +1,18 @@
+.stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.stat-cell + .stat-cell {
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat-cell {
+  font-size: 16px;
+  color: var(--ink-dim);
+}
+.stat-cell b {
+  color: var(--ink);
+  font-weight: 700;
+}

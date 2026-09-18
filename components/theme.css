@@ -1,0 +1,8 @@
+/* Shared tokens for content sitting directly on the light page background
+   (no navy card behind it) — the app's --text/--text-dim vars are tuned
+   for the dark navy cards, so anything that floats needs its own ink. */
+:root {
+  --ink: #1c2333;
+  --ink-dim: #6b7280;
+  --track-light: #d9dce0;
+}
